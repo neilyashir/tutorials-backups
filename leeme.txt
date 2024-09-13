@@ -1,0 +1,4 @@
+Las carpetas de arriba son nombres de canales de youtube, y su contenido es el backup de los tutoriales que he realizado gracias a ellos
+
+Dentro de "Hola mundo" hay una carpeta llamada "html cero" son busquedas en youtube con prompt allintitle y resultados ordenados por visualizaciones.
+No incluire la carpeta "Fazt" y su "git cero", ya lo tengo en el repositorio "hello-git"

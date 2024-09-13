@@ -1,0 +1,99 @@
+<!-- pulsa ! y luego Tab para la estructura html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web title</title>
+    <!-- dentro de style se usa codigo CSS -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 300px;">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A wave</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>Happy pig</td>
+                <td>$19.90</td>
+            </tr>
+            <tr>
+                <td>Very happy pig</td>
+                <td>$39.90</td>
+            </tr>
+        </tbody>
+        <!-- Se activara scrool dentro de la tabla, se mantendra el tfoot ¿y thead? -->
+        <tfoot>
+            <td></td>
+            <td>Total $59.80</td>
+        </tfoot>
+    </table>
+    <!-- ul se traduce como unordered list -->
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+    </ul>
+    <!-- ol es una ordenada lista -->
+    <ol>
+        <li value="11">Element 1</li>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">subelement 1</li>
+                <li style="list-style-type: lower-roman;">subelement 2</li>
+                <li style="list-style-type: lower-roman;">subelement 3</li>
+            </ol>>
+        </li>
+    </ol>
+    
+    <!-- GET incluye en la url los datos ingresados, POST solo /formulario pero se inspecciona para encontrar los datos -->
+    <form action="/formulario" method="get">
+        <label for="nombre">Name:</label>
+        <!-- type input - id - clave name - valor input - Texto in Input -->
+        <input value="Happy" type="text" id="nombre" name="nombre" placeholder="Input your name"/>
+        <br>
+        <label for="nombre">lastname:</label>
+        <input value="pig" type="text" id="apellido" name="apellido" placeholder="Input your lastname"/>
+        <br>
+        <label for="comentario">Comment:</label>
+        <br>
+        <textarea rows="6" cols="30" id="comentario" placeholder="Enter a comment" name="comentario">This is a default text value</textarea>
+        <br>
+        <!-- <input type="submit"> BUTTONS are better -->
+        <button type="button"><img src="img/Coffee cup.jpg" />Button type</button>
+        <button type="reset">Reset type</button>
+        <button type="submit">Submit type</button>
+    </form>
+
+    <h1>My first heading</h1>
+    <h2>My second heading</h2>
+    <h6>Chanchito feliz</h6>
+    <p>Web content:</p>
+    <p>Happy pig is really feliz</p>
+    <p>Sad pig is very sad</p>
+    <hr>
+    <h2>Felipe pig</h2>
+        <!-- This is a comment and won't appear in the browser -->
+    <p>This text is <span style="color:blue">very larger</span> and it's for show <br> span <br><br>tag</p>
+        <!-- target _blank para abrir el link en nueva pestaña -->
+    <a target="_blank" href="https://www.google.com.bo">Go to google</a>
+    <br>
+    <img src="img/Coffee cup.jpg" height="300" width="200">
+        <!-- MINUTO 71 de https://www.youtube.com/watch?v=MJkdaVFHrto -->
+    
+</body>
+</html>

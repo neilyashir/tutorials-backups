@@ -1,0 +1,17 @@
+/* elementname para seleccionar un elemento */
+/* #idname para seleccionar por identificador*/
+#titulo {
+    color: tomato;
+}
+/* .classname para seleccionar clases; se puede combianar con elementname */
+p.texto {
+    color: slateblue;
+}
+/* El ultimo se antepone a los anteriores */ 
+p.especial {
+    color: mediumaquamarine;
+}
+/* p siendo hijos de div seran coloreados */
+div p {
+
+}
