@@ -21,15 +21,14 @@ div h2, div h3 {
 /* * Selector universal agaroo todo salvo sea controlado desde otra linea */
 * {
     font-size: 24px;
-    color: black;
+    /* color: darkgray; */
 }
 /* hexadecimal desde 0 = oscuro hasta F = claro 
 .color {   #rrggbbaa
-    color: #ff0000;
+  o color: #ff0000;
+  o color: rgb(255, 255, 255);
 }
-.color {
-    color: rgb(255, 255, 255);
-} */
+ */
 .color {
 /*     border: 5px black dotted; solid,dashed or other */
     border-style: solid;
@@ -38,7 +37,115 @@ div h2, div h3 {
     border-width: 5px;
 }
 #fondo {
-    background-color: rgb(255, 0, 0);
-    opacity: 0.3;
+    background-color: rgb(255, 0, 0);    /* opacity: 0.5; */
+    height: 250px;
+    background-image: url('Coffee\ cup.jpg');
+    background-repeat: repeat-y; /* repeat-x, no-repeat */
+    background-position: center center; /* x(left center right) y(top center bottom) */
+    background: #f00 url(Coffee\ cup.jpg) repeat-y center bottom;
+    background-size: 200px 200px; /* cover, auto */
 }
-/* minuto 48 */
+.margen {
+    background-color: chocolate;
+     /* verti horiz, up horiz bot, top right bottom left */
+    margin: 15px 20px 25px 30px;
+    padding: 30px 25px 20px 15px;
+    border: solid 2px black;
+    height: 60px;
+    width: 30px;
+    overflow: scroll; /* df-visible hidden  */
+    outline: 1px solid blue;
+}
+.texto {
+    font-family: 'Roboto', sans-serif;
+    text-align: center; /* df-left right justify */
+    text-decoration: overline; /* underline line-through */
+    text-shadow: 3px 5px 5px blue; /* right down blur color */
+}
+/* los links en html tienen 4 estados
+Nunca visitados, una vez vistados, pasamos el mouse por encima y cuando se encuentra activo  */
+a:link {
+    color: blueviolet;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color: yellow;
+}
+a:active {
+    color: red; 
+}
+ul {
+    background-color: cyan;
+    list-style-type: georgian; /* circle disc none */
+    /* padding-left: 0; */
+    /* list-style-position: inside ; */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+span {
+    display: block; /* forzar en salto de linea*/
+    /* display: none; */
+    /* visibility: hidden; */ /* oculta pero guarda su espacio */
+    width: 300px; /* max-width es ancho maximo */
+    background-color: #f00;
+}
+.inline {
+    display: inline; /* no salto de linea df-in(span, link & img) */
+}
+#posicion {
+    /* sticky funciona como article y fixed*/
+    position: sticky; /* absolute fixed relative df-static */
+    left: 20px;
+    top: 15px;
+}
+.izq {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.der {
+    float: right;
+}
+.contenedor {
+    height: 200px;
+}
+.columna {
+    /* border: solid 0px #ddd;
+    border-radius: 5px; */
+    margin: 0;
+    padding: 10px 0; 
+    width: 33.3%;
+}
+.inline-block {
+    display: inline-block; /* inline no se les aplica height ni width */ 
+    height: 55px;
+    background-color: red;
+}
+.centro {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+/* minuto 107 */
