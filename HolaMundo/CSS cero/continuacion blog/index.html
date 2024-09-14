@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document html</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Para agrupar links -->
+    <header>
+        <!-- atributo ID para interactuar con css o js, class para repetir IDs en varios elementos -->
+        <h1 id="title">Blog about happy piggy</h1>
+    </header>
+    <!-- Div Se usaba cuando no existia header ni section. No encadenes los div innecesariamente -->
+<!--     <div>
+        <p>I'm a paragraph inside a div</p>
+    </div> -->
+    <section class="container">
+        <!-- Pa' definir contenido independiente -->
+        <article class="post">
+            <h2>Post title</h2>
+            <p>Post description</p>
+            <img src="img/Coffee cup.jpg" width="400" />
+            <p>Text of the article you're viewing and it's a test text, enjoy your coffee</p>
+        </article>
+        <article class="post">
+            <h2>Post title 2</h2>
+            <p>Post description 2</p>
+            <img src="img/SpongeBob.png" width="300" />
+            <p>SpongeBob is a famous cartoons character, go wash the dishes</p>
+        </article>
+    </section>
+    <footer>
+        <section>
+            <!-- #title para dirigirlos a una parte de la pagina -->
+            <a href="#title">Go to top</a>
+            <!-- abre el cliente de correos para escribirle un email -->
+            <a href="mailto:yashirneil@gmail.com">Contact me here</a>
+        </section>
+        <p>Copyright 2024</p>
+    </footer>
+</body>
+</html>
